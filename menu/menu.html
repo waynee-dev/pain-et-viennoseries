@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Pein Et Viennoseries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <div class="menu-btn" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <a href="/index.html">HOME</a>
+    <a href="menu.html">MENU</a>
+    <a href="/faqs/faqs.html">FAQS</a>
+    <a href="/contacts/contacts.html">CONTACTS</a>
+  </div>
+  
+  <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+  <div class="header">
+    <h1 class="header-title">OUR MENU</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="/faqs/faqs.html">FAQs</a></li>
+        <li><a href="/contacts/contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <section class="menu-navbar">
+    <div class="navbar-btn">
+      <a href="#whats-new">What's New</a>
+    </div>
+    <div class="navbar-btn">
+      <a href="#breads">Breads</a>
+    </div>
+    <div class="navbar-btn">
+      <a href="#pastries">Pastries</a>
+    </div>
+  </section>
+  
+  <section class="order-now">
+    <h1 class="menu-title">MENU</h1>
+    <p class="contact-us">Order now on <a href="/index.html"><span> peinetviennoseries.com.ph </span></a></p>
+  </section>
+  
+  <section class="whats-new-section" id="whats-new">
+    <div class="whats-new-banner">WHAT'S NEW?</div>
+    <div class="products-container">
+      <div class="new-sell-box">
+        <h1 class="new-sell-title">CROISSANT</h1>
+        <img src="/images/Croissants .webp" class="new-sell" alt="Croissant">
+      </div>
+      <div class="new-sell-box">
+        <h1 class="new-sell-title">PAIN A l'AIL</h1>
+        <img src="/images/Pain A I'ail.jpg" class="new-sell" alt="Garlic Bread">
+      </div>
+      <div class="new-sell-box">
+        <h1 class="new-sell-title">ECLAIR</h1>
+        <img src="/images/Eclair.jpg" class="new-sell" alt="Eclair">
+      </div>
+    </div>
+  </section>
+  
+  <section class="bread-section" id="breads">
+    <div class="bread-banner">BREADS</div>
+    <div class="products-container">
+      <div class="bread-box">
+        <h1 class="bread-title">BAGUETTE</h1>
+        <img src="/images/Baguette .jpg" class="breads" alt="Baguette">
+        <p class="bread-description">Crispy on the outside and Fluffy on the inside</p>
+      </div>
+      <div class="bread-box">
+        <h1 class="bread-title">PAIN AUX NOIX</h1>
+        <img src="/images/Pain Aux Noix.jpg" class="breads" alt="Pain Aux Noix">
+        <p class="bread-description">Made with walnuts giving it distinctive nutty flavour and satisfying crunchy texture</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="pastries-section" id="pastries">
+    <div class="pastries-banner">PASTRIES</div>
+    <div class="products-container">
+      <div class="pastries-box">
+        <h1 class="pastries-title">Croissant</h1>
+        <img src="/images/Croissants .webp" class="pastrie" alt="Croissant">
+        <p class="pastrie-description">Famous french breakfast pastries renowned around the world</p>
+      </div>
+      <div class="pastries-box">
+        <h1 class="pastries-title">Eclair</h1>
+        <img src="/images/Eclair.jpg" class="pastrie" alt="Eclair">
+        <p class="pastrie-description">An oblong shaped choux dough filled with cream and topped with chocolate icing</p>
+      </div>
+    </div>
+  </section>
+  
+  <script src="menu.js"></script>
+</body>
+</html>
