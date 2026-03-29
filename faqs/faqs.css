@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #47291F;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  z-index: 1001;
+}
+
+.menu-btn i {
+  font-size: 24px;
+  color: black;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 999;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.sidebar {
+  position: fixed;
+  top: 70px;
+  left: -280px;
+  width: 260px;
+  background: #2B1D0E;
+  transition: 0.3s ease;
+  z-index: 1000;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 2px 0 15px rgba(0,0,0,0.3);
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar a {
+  display: block;
+  padding: 14px 24px;
+  color: #F5E6D3;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:first-child {
+  padding-top: 18px;
+}
+
+.sidebar a:last-child {
+  border-bottom: none;
+  padding-bottom: 18px;
+}
+
+.sidebar a:hover {
+  background: #8B5A2B;
+  padding-left: 32px;
+  color: white;
+}
+
+.header {
+  background: #5C4033;
+  border-bottom: 2px solid #3A2A1F;
+  padding: 20px;
+}
+
+.header-title {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.6rem;
+  color: black;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.navbar ul {
+  display: none;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  color: #E8D9C5;
+  transition: color 0.3s;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.navbar ul li a:hover {
+  color: #FFD966;
+}
+
+.menu-navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+.navbar-btn a {
+  display: inline-block;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 8px;
+  background: #8B5A2B;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  letter-spacing: 1px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.navbar-btn a:hover {
+  transform: scale(1.05);
+  background: #A0522D;
+}
+.card {
+  margin: 60px auto 80px auto;
+  background: #D4AF7A;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  width: 90%;
+  transition: all 0.3s ease;
+}
+
+.card-content {
+  padding: 40px 35px;
+}
+
+.faq-item {
+  margin-bottom: 32px;
+  transition: all 0.3s ease;
+}
+
+.faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.question {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-left: 4px solid #5C4033;
+  padding-left: 16px;
+}
+
+.question p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2B1D0E;
+  line-height: 1.4;
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+
+.answer {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding-left: 20px;
+}
+
+.answer::before {
+  content: "→";
+  color: #5C4033;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.answer span:last-child {
+  font-size: 1rem;
+  color: #2B1D0E;
+  line-height: 1.6;
+  flex: 1;
+  font-family: "Playfair Display", serif;
+}
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+  
+  .sidebar {
+    display: none;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  .header {
+    padding: 20px 40px;
+  }
+  
+  .header-title {
+    font-size: 2rem;
+  }
+}
