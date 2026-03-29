@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Pain et Viennoiseries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu-btn" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <a href="index.html">HOME</a>
+    <a href="menu/menu.html">MENU</a>
+    <a href="/faqs/faqs.html">FAQS</a>
+    <a href="/contacts/contacts.html">CONTACTS</a>
+  </div>
+  
+  <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+  <div class="header">
+    <h1 class="header-title">PAIN ET VIENNOSERIES</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/menu/menu.html">Menu</a></li>
+        <li><a href="/faqs/faqs.html">FAQs</a></li>
+        <li><a href="/contacts/contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="fresh-bread-section">
+    <h1 class="fresh-bread">Happiness From Freshly Baked Breads</h1>
+    <div class="best-seller-banner">Best Sellers</div>
+    
+    <div class="best-seller-box">
+      <h1 class="best-seller-title">CROISSANT</h1>
+      <img src="images/Croissants .webp" class="croissant-img" alt="Fresh Croissant">
+      <button class="order-now-btn">ORDER NOW</button>
+    </div>
+    
+    <div class="best-seller-box">
+      <h1 class="best-seller-title">PAIN A l'AIL</h1>
+      <img src="images/Pain A I'ail.jpg" class="best-seller-img" alt="Garlic Bread">
+      <button class="order-now-btn">ORDER NOW</button>
+    </div>
+    
+    <div class="best-seller-box">
+      <h1 class="best-seller-title">ECLAIR</h1>
+      <img src="images/Eclair.jpg" class="best-seller-img" alt="Eclair">
+      <button class="order-now-btn">ORDER NOW</button>
+    </div>
+  </section>
+  
+  <section class="footer">
+    <img src="images/ei_1774609446567-removebg-preview.png" class="footer-logo" alt="Bakery Logo">
+    <p class="follow-us">Follow Us !</p>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="Viber"><i class="fab fa-viber"></i></a>
+    </div>
+  </section>
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
